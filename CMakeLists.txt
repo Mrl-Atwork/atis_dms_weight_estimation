@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(weight_estimation)
+project(atis_dms_weight_estimation)
 catkin_package()
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)

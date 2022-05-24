@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>weight_estimation</name>
+  <name>atis_dms_weight_estimation</name>
   <version>0.0.0</version>
-  <description>The weight_estimation package</description>
+  <description>The atis_dms_weight_estimation package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

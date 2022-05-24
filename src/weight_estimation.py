@@ -20,7 +20,7 @@ len_locations=len(locations)
 distance_array=np.ndarray(shape=(len_locations,len_locations), dtype=float)
 
 def get_path(start_point,goal_point, locations):
-    get_plan = rospy.ServiceProxy('/move_base_flex/navfn/NavfnROS/make_plan',nav_srvs.GetPlan)
+    get_plan = rospy.ServiceProxy('/move_base/NavfnROS/make_plan',nav_srvs.GetPlan)
     first_point = PoseStamped()
     first_point.header.frame_id = "map"
     first_point.pose.position.x = float(locations[start_point]['x'])
@@ -73,4 +73,4 @@ for x in locations:
 
 
 
-np.savetxt("lenght.txt", distance_array, delimiter=", ",fmt='%s')
+np.savetxt("/home/irvan/catkin_ws/src/atis_dms_weight_estimation/lenght.txt", distance_array, delimiter=", ",fmt='%s')
